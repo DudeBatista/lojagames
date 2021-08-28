@@ -1,0 +1,38 @@
+﻿@model lojagames.Models.Jogo
+@{
+    ViewBag.Title = "Listar";
+}
+
+<h2>Listar</h2>
+
+<fieldset>
+    <legend>Lista de Jogos</legend>
+    <div class="editor-label"> @Html.DisplayNameFor(m => m.JogoCod)</div>
+    <div class="editor-field">@Html.DisplayFor(m => m.JogoCod)</div><br />
+
+    <div class="editor-label">@Html.DisplayNameFor(m => m.JogoNome)</div>
+    <div class="editor-field">@Html.DisplayFor(m => m.JogoNome)</div><br />
+
+    <div class="editor-label">@Html.DisplayNameFor(m => m.JogoVersao)</div>
+    <div class="editor-field">@Html.DisplayFor(m => m.JogoVersao)</div><br />
+
+    <div class="editor-label"> @Html.DisplayNameFor(m => m.JogoDesen)</div>
+    <div class="editor-field">@Html.DisplayFor(m => m.JogoDesen)</div><br />
+
+    <div class="editor-label">@Html.DisplayNameFor(m => m.JogoGen)</div>
+    <div class="editor-field">@Html.DisplayFor(m => m.JogoGen)</div><br />
+
+    <div class="editor-label">@Html.DisplayNameFor(m => m.JogoFaixa)</div>
+    <div class="editor-field">@Html.DisplayFor(m => m.JogoFaixa)</div><br />
+
+    <div class="editor-label"> @Html.DisplayNameFor(m => m.JogoPlataforma)</div>
+    <div class="editor-field">@Html.DisplayFor(m => m.JogoPlataforma)</div><br />
+
+    <div class="editor-label">@Html.DisplayNameFor(m => m.JogoAno)</div>
+    <div class="editor-field">@Html.DisplayFor(m => m.JogoAno)</div><br />
+
+    <div class="editor-label">@Html.DisplayNameFor(m => m.JogoSinopse)</div>
+    <div class="editor-field">@Html.DisplayFor(m => m.JogoSinopse)</div><br />
+</fieldset>
+<br />
+@Html.ActionLink("Voltar", "Index", "Home")

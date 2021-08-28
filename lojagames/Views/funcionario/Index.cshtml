@@ -1,0 +1,81 @@
+﻿@model lojagames.Models.Funcionario
+@{
+    ViewBag.Title = "Index";
+}
+
+<b><h3>Funcionário</h3></b>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+
+<fieldset>
+    <legend>Cadastro de Funcionários</legend>
+    <div class="editor-label">
+        @Html.LabelFor(m => m.FuncCod)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(m => m.FuncCod)
+        @Html.ValidationMessageFor(m => m.FuncCod)
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(m => m.FuncNome)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(m => m.FuncNome)
+        @Html.ValidationMessageFor(m => m.FuncNome)
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(m => m.FuncCPF)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(m => m.FuncCPF)
+        @Html.ValidationMessageFor(m => m.FuncCPF)
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(m => m.FuncRG)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(m => m.FuncRG)
+        @Html.ValidationMessageFor(m => m.FuncRG)
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(m => m.FuncDataNasc)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(m => m.FuncDataNasc)
+        @Html.ValidationMessageFor(m => m.FuncDataNasc)
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(m => m.FuncEndereco)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(m => m.FuncEndereco)
+        @Html.ValidationMessageFor(m => m.FuncEndereco)
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(m => m.FuncCelular)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(m => m.FuncCelular)
+        @Html.ValidationMessageFor(m => m.FuncCelular)
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(m => m.FuncEmail)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(m => m.FuncEmail)
+        @Html.ValidationMessageFor(m => m.FuncEmail)
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(m => m.FuncCargo)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(m => m.FuncCargo)
+        @Html.ValidationMessageFor(m => m.FuncCargo)
+    </div>
+    <br /><div>
+        <input type="submit" value="Enviar" />
+    </div>
+</fieldset>
+}
